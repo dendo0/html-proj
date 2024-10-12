@@ -1,5 +1,33 @@
-<style>
-body {
-  background-image: url('ei4yzicr48c41.webp');
-}
-</style>
+
+            body{
+                background-image: url("creative-treble-clef-sign-isolated-generative-ai_169016-29569.avif");
+                height: 60vh;
+                background-size: cover;
+                background-position: center;
+            }
+            h1{
+                color:black;
+            }
+            h1:hover{
+                color: pink;
+               }
+           ul{
+            color: black;
+            text-transform:uppercase;
+           }
+
+           ol{
+            color:rgb(18, 0, 34) ;
+           }
+           img{
+            width: 300px;
+            height: 300px;
+            border: 10px solid white;
+           }
+         
+           p{
+            color: whitesmoke;
+           }
+         p:hover{
+            color:blue
+           }
