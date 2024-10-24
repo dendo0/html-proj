@@ -4,32 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="images/png" href="Music Logo.jpg">
-    <title>Music is peace</title>
+    <title>Music is Peace</title>
     <style>
-        body{
+        body {
             background-image: url("couple-walking-on-beach-at-sunset-romantic-beach-walk-sunset-beach-landscape-rqvzdyc5.jpeg");
             background-size: cover;
             background-position: center;
-                
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            border: 5px solid black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-        p{
+        h1 {
+            font-size: 50px;
+            margin-bottom: 0;
+        }
+        p {
             font-size: 20px;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        a:hover {
+            color: blue;
+        }
+        .outside-image {
+            position: absolute;
+            top: -50px;  /* Adjust this to move image above or below the border */
+            right: -50px; /* Adjust this to move the image left or right */
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Optional to make the image circular */
         }
     </style>
 </head>
-<body style="max-width: 500px;
-             margin: 50px auto;
-             padding: 20px;
-             text-align: center;
-             border: 5px solid black;
-             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-        <h1 style="font-size: 50px; margin-bottom: 0;">Cool Down</h1>
-        <p>by: Kolehai Kai</p>
-        <img src="images.jpg" 
-            width="30% auto" 
-            style="margin:0 auto;
-            display: block;
-            border-radius: 15px;">
+<body>
+    <h1>Cool Down</h1>
+    <p>by: Kolohe Kai</p>
+    <img src="images.jpg" alt="Cool Down Image">
 <p style="font-size: 20px;">
 
 It's another fiery afternoon (so hot, so hot) <br>
@@ -153,7 +176,7 @@ Cool down<br>
 
     Cool down<br>
 </p>
-
+<img src="" alt="Outside Image" class="outside-image">
 <a href="index.html">previous</a><br>
 <a href="Secondsong.html">next song</a>
 </body>
