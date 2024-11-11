@@ -1,33 +1,85 @@
+/* Global Styles */
+body {
+    background-image: url("picture.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
 
-            body{
-                background-image: url("creative-treble-clef-sign-isolated-generative-ai_169016-29569.avif");
-                height: 60vh;
-                background-size: cover;
-                background-position: center;
-            }
-            h1{
-                color:black;
-            }
-            h1:hover{
-                color: pink;
-               }
-           ul{
-            color: black;
-            text-transform:uppercase;
-           }
+/* Background Styling */
+body.Firstsong {
+    background-image: url("imagee.webp");
+    background-size: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
 
-           ol{
-            color:rgb(18, 0, 34) ;
-           }
-           img{
-            width: 300px;
-            height: 300px;
-            border: 10px solid white;
-           }
-         
-           p{
-            color: whitesmoke;
-           }
-         p:hover{
-            color:blue
-           }
+/* Header Styling */
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+}
+
+.outside-image {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Circular Image */
+img[src="images.jpg"],
+img[src="imagee.jpg"] {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Audio Control Styling */
+audio {
+    margin: 20px 0;
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px;
+}
+
+a:hover {
+    color: blue;
+}
+
+/* Home Page Styling */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+}
+
+
