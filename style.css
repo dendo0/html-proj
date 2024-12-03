@@ -1,108 +1,157 @@
-/* Global Styles */
-body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    margin: 0;
+* {
+    box-sizing: border-box;
     padding: 0;
+    margin: 0;
+    font-family: Helvetica, Tahoma, "Trebuchet MS", "Times New Roman", Georgia;
+  }
+  
+  body {
+    background-color: #f1faee;
+  }
+  
+  header {
+    position: relative;
+    font-size: 30px;
+    width: 100%;
+    height: 80px;
+    color: black;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  header a:hover {
+    color: #fb8500;
+  }
+  
+  header a:visited {
+    color: #1d3557;
+  }
+  
+  header div {
+    display: inline-block;
+    top: 40px;
+    font-size: 20px;
+  }
+  
+  header .header-left {
+    position: absolute;
+  
+    left: 10%;
+    right: auto;
+  }
+  
+  header .header-mid {
+    text-align: center;
+    position: absolute;
+    width: 35vw;
+    left: 50%;
+    transform: translate(-50%, 0);
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  header .header-right {
+    position: absolute;
+    right: 10%;
+    left: auto;
+  }
+  
+  header a {
+    margin-left: 10px;
+  }
+  
+  .title {
+    width: 100%;
+    height: 400px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .title .text {
+    font-size: 20px;
+    margin: auto;
+    width: 60vw;
+  }
+  
+  .catalog {
+    width: 100%;
+    text-align: center;
+  }
+  .catalog div {
+    width: calc(33% - 10px);
+    display: inline-block;
+    padding: 10px;
+    height: 500px;
+  }
+  
+  .catalog div:hover {
+    animation-name: resize;
+    animation-duration: 1s;
+  }
+  
+  @keyframes resize {
+    70% {
+      transform: scale(0.9);
+    }
+  }
+  
+  .catalog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  footer {
+    position: relative;
+    bottom: 0px;
+    top: auto;
+    width: 100%;
+    background-color: #fb8500;
+    padding: 10px;
+    color: black;
+  }
+  footer div {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 1000px) {
+    .catalog div {
+      width: calc(50% - 5px);
+      padding: 5px;
+      height: 400px;
+    }
+    .title h1 {
+      font-size: 35px;
+    }
+  }
+  .lyrics {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-header {
-    text-align: center;
-    margin: 20px 0;
-}
-
-header h1 {
-    color: #1db954;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
-    color: #b3b3b3;
-}
-
-/* Song Links Section */
-.song-links {
-    text-align: center;
-    max-width: 800px;
-    padding: 20px;
-}
-
-.song-links h2 {
-    font-size: 1.8em;
-    color: #1db954;
-}
-
-.image-container {
-    display: flex;
     justify-content: center;
-    gap: 20px;
-}
-
-.song-option {
     text-align: center;
+    margin: 20px auto; 
+    padding: 20px;
+    max-width: 800px;
+    border: 2px solid #1d3557; 
+    border-radius: 15px; 
+    background-color: #f8f9fa; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    font-size: 16px; 
+    line-height: 1.5; 
 }
-
-.song-option img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.song-option a {
-    display: block;
-    text-decoration: none;
-    color: #1db954;
-    font-size: 1.1em;
-}
-
-.song-option a:hover {
-    color: #1ed760;
-}
-
-/* Lyrics Section */
-.lyrics {
-    max-width: 600px;
-    background-color: #181818;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px auto;
-    text-align: center;
-}
-
-.lyrics h2 {
-    font-size: 1.5em;
-    color: #1db954;
-    margin-bottom: 10px;
-}
-
 .lyrics p {
-    font-size: 1em;
-    color: #b3b3b3;
-    line-height: 1.6;
+    margin: 15px 0; 
+    text-align: justify; 
 }
 
-audio {
-    width: 100%;
-    margin-top: 20px;
-}
-
-/* Back Link */
-.back-link {
-    display: inline-block;
-    color: #1db954;
-    font-size: 1em;
-    margin: 20px;
-    text-decoration: none;
-}
-
-.back-link:hover {
-    color: #1ed760;
-}
